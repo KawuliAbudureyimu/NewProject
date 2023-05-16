@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { SITE_TITLE } from './components/content';
+import { SITE_DESCRIPTION } from './components/content';
 import './App.css';
 
 
@@ -20,6 +21,7 @@ import './App.css';
  function App() {
   return (
     <>
+   
       {/*
         This example requires updating your template:
 
@@ -36,8 +38,8 @@ import './App.css';
             alt="Your Company"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Sign in to your account
-          </h2>
+          { SITE_TITLE }
+         </h2>
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
@@ -97,7 +99,11 @@ import './App.css';
               Start a 14 day free trial
             </a>
           </p>
+          
         </div>
+        <h1 className='flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8'>
+            { SITE_DESCRIPTION }
+          </h1>
       </div>
    
 
